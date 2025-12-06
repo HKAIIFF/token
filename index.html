@@ -71,9 +71,145 @@
             background: rgba(255,255,255,0.95);
             backdrop-filter: blur(5px);
         }
+
+        /* Compliance Modal Overlay - FROM TOKEN2.HTML */
+        .compliance-overlay {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Custom Checkbox - FROM TOKEN2.HTML */
+        .custom-checkbox {
+            appearance: none;
+            background-color: #fff;
+            margin: 0;
+            font: inherit;
+            color: currentColor;
+            width: 1.15em;
+            height: 1.15em;
+            border: 1px solid currentColor;
+            border-radius: 0.15em;
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+        }
+
+        .custom-checkbox::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em #1a1a1a;
+            background-color: #1a1a1a;
+            transform-origin: center;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        .custom-checkbox:checked::before {
+            transform: scale(1);
+        }
     </style>
 </head>
-<body class="bg-white text-black selection:bg-black selection:text-white">
+<body class="bg-white text-black selection:bg-black selection:text-white overflow-hidden" id="mainBody">
+
+    <!-- Compliance Modal - FROM TOKEN2.HTML -->
+    <div id="complianceModal" class="fixed inset-0 z-[100] compliance-overlay flex items-center justify-center p-4">
+        <div class="bg-white border border-black shadow-2xl rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto flex flex-col relative">
+            
+            <!-- Language Toggle in Modal -->
+            <div class="absolute top-6 right-6 z-10">
+                <button onclick="toggleLanguage()" class="text-xs font-mono border border-gray-200 px-3 py-1.5 rounded-full hover:bg-black hover:text-white transition-all uppercase flex items-center gap-2">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-en active">EN</span><span class="lang-zh">繁體</span>
+                </button>
+            </div>
+
+            <div class="p-8 md:p-10">
+                <div class="text-center mb-8">
+                    <div class="inline-block p-3 rounded-full bg-black text-white mb-4 text-xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2">
+                        <span class="lang-zh">重要聲明</span>
+                        <span class="lang-en active">Important Disclaimer</span>
+                    </h2>
+                    <div class="h-1 w-16 bg-black mx-auto"></div>
+                </div>
+
+                <div class="text-sm text-gray-600 mb-8 leading-relaxed text-center space-y-2">
+                    <p>
+                        <span class="lang-zh">您即將進入 HKAIIFF 數字資產服務區域。</span>
+                        <span class="lang-en active">You are about to enter the HKAIIFF Digital Asset Service Area.</span>
+                    </p>
+                    <p class="font-medium text-black">
+                        <span class="lang-zh">本服務由香港主體提供，受香港法律管轄。</span>
+                        <span class="lang-en active">This service is provided by a Hong Kong entity and is subject to Hong Kong laws.</span>
+                    </p>
+                </div>
+
+                <div class="space-y-4 mb-8">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">
+                        <span class="lang-zh">請確認：</span>
+                        <span class="lang-en active">Please Confirm:</span>
+                    </p>
+                    
+                    <label class="flex items-start gap-3 cursor-pointer group">
+                        <input type="checkbox" class="custom-checkbox mt-0.5 compliance-check">
+                        <span class="text-sm group-hover:text-black text-gray-600 transition-colors">
+                            <span class="lang-zh">本人非中國大陸居民</span>
+                            <span class="lang-en active">I am not a resident of Mainland China</span>
+                        </span>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer group">
+                        <input type="checkbox" class="custom-checkbox mt-0.5 compliance-check">
+                        <span class="text-sm group-hover:text-black text-gray-600 transition-colors">
+                            <span class="lang-zh">本人非美國公民或居民</span>
+                            <span class="lang-en active">I am not a U.S. citizen or resident</span>
+                        </span>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer group">
+                        <input type="checkbox" class="custom-checkbox mt-0.5 compliance-check">
+                        <span class="text-sm group-hover:text-black text-gray-600 transition-colors">
+                            <span class="lang-zh">本人通過自有境外資產參與</span>
+                            <span class="lang-en active">I am participating using my own offshore assets</span>
+                        </span>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer group">
+                        <input type="checkbox" class="custom-checkbox mt-0.5 compliance-check">
+                        <span class="text-sm group-hover:text-black text-gray-600 transition-colors">
+                            <span class="lang-zh">本人知悉數字資產投資風險</span>
+                            <span class="lang-en active">I am aware of the risks involved in digital asset investment</span>
+                        </span>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer group">
+                        <input type="checkbox" class="custom-checkbox mt-0.5 compliance-check">
+                        <span class="text-sm group-hover:text-black text-gray-600 transition-colors">
+                            <span class="lang-zh">本人自願承擔全部投資風險</span>
+                            <span class="lang-en active">I voluntarily assume all investment risks</span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="space-y-4">
+                    <button id="complianceBtn" disabled onclick="acceptCompliance()" class="w-full bg-black text-white py-4 rounded-xl font-bold text-sm tracking-wide disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-900 transition-all transform hover:-translate-y-1">
+                        <span class="lang-zh">確認並進入</span>
+                        <span class="lang-en active">Confirm & Enter</span>
+                    </button>
+                    
+                    <p class="text-[10px] text-center text-gray-400">
+                        <span class="lang-zh">我已閱讀並同意《用戶協議》《風險提示書》</span>
+                        <span class="lang-en active">I have read and agree to the "User Agreement" and "Risk Disclosure Statement"</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compliance Modal END -->
 
     <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all duration-300">
         <div class="px-6 md:px-8 py-4 flex justify-between items-center max-w-[1920px] mx-auto">
@@ -682,6 +818,31 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+
+        // Compliance Modal Logic - FROM TOKEN2.HTML
+        const complianceChecks = document.querySelectorAll('.compliance-check');
+        const complianceBtn = document.getElementById('complianceBtn');
+        const complianceModal = document.getElementById('complianceModal');
+        const mainBody = document.getElementById('mainBody');
+
+        complianceChecks.forEach(check => {
+            check.addEventListener('change', validateCompliance);
+        });
+
+        function validateCompliance() {
+            const allChecked = Array.from(complianceChecks).every(c => c.checked);
+            complianceBtn.disabled = !allChecked;
+        }
+
+        function acceptCompliance() {
+            complianceModal.style.opacity = '0';
+            complianceModal.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                complianceModal.classList.add('hidden');
+                // Enable scrolling on body
+                mainBody.classList.remove('overflow-hidden');
+            }, 500);
+        }
     </script>
 </body>
 </html>

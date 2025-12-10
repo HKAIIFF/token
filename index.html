@@ -113,7 +113,7 @@
 </head>
 <body class="bg-white text-black selection:bg-black selection:text-white overflow-hidden" id="mainBody">
 
-    <!-- Compliance Modal - FROM TOKEN2.HTML -->
+    <!-- Compliance Modal -->
     <div id="complianceModal" class="fixed inset-0 z-[100] compliance-overlay flex items-center justify-center p-4">
         <div class="bg-white border border-black shadow-2xl rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto flex flex-col relative">
             
@@ -220,7 +220,7 @@
                 <div class="flex flex-col leading-none">
                     <span class="text-lg font-bold tracking-tight">AIF Token.</span>
                     <span class="text-[0.6rem] font-mono uppercase tracking-wider text-gray-500 group-hover:text-black transition-colors">
-                        <span class="lang-zh">AI電影代幣</span><span class="lang-en active">AI Film Token</span>
+                        <span class="lang-zh">AI電影通證</span><span class="lang-en active">AI Film Token</span>
                     </span>
                 </div>
             </a>
@@ -229,7 +229,7 @@
                 <a href="#ecosystem" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">生態系統</span><span class="lang-en active">Ecosystem</span></a>
                 <a href="#about-aif" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">關於AIF</span><span class="lang-en active">About AIF</span></a>
                 <a href="#phantom-wallet" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">Phantom錢包</span><span class="lang-en active">Phantom Wallet</span></a>
-                <a href="#tokenomics" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">代幣經濟</span><span class="lang-en active">Tokenomics</span></a>
+                <a href="#tokenomics" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">通證經濟</span><span class="lang-en active">Tokenomics</span></a>
                 <a href="#invitation" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">邀請制釋放</span><span class="lang-en active">Invitation Release</span></a>
                 <a href="#roadmap" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">路線圖</span><span class="lang-en active">Roadmap</span></a>
             </div>
@@ -240,8 +240,9 @@
                 </button>
 
                 <a href="https://wise.com/pay/business/uj6hyy?currency=USD&amount=518.18&description=AIF-USD" target="_blank" class="bg-black text-white text-[13px] font-medium px-6 py-3 rounded-full academy-btn flex items-center gap-2">
-                    <i class="fas fa-shopping-cart text-xs"></i>
-                    <span class="lang-zh">購買 AIF</span><span class="lang-en active">Buy AIF</span>
+                    <i class="fas fa-arrow-right text-xs"></i>
+                    <!-- Compliance Fix: Change 'Buy' to 'Acquire' -->
+                    <span class="lang-zh">获取 AIF</span><span class="lang-en active">Acquire AIF</span>
                 </a>
 
                 <button class="xl:hidden text-black" onclick="toggleMobileMenu()">
@@ -259,7 +260,7 @@
             <a href="#ecosystem" onclick="toggleMobileMenu()"><span class="lang-zh">生態系統</span><span class="lang-en active">Ecosystem</span></a>
             <a href="#about-aif" onclick="toggleMobileMenu()"><span class="lang-zh">關於AIF</span><span class="lang-en active">About AIF</span></a>
             <a href="#phantom-wallet" onclick="toggleMobileMenu()"><span class="lang-zh">Phantom錢包</span><span class="lang-en active">Phantom Wallet</span></a>
-            <a href="#tokenomics" onclick="toggleMobileMenu()"><span class="lang-zh">代幣經濟</span><span class="lang-en active">Tokenomics</span></a>
+            <a href="#tokenomics" onclick="toggleMobileMenu()"><span class="lang-zh">通證經濟</span><span class="lang-en active">Tokenomics</span></a>
             <a href="#invitation" onclick="toggleMobileMenu()"><span class="lang-zh">邀請制釋放</span><span class="lang-en active">Invitation Release</span></a>
             <div class="border-t border-gray-200 pt-4 mt-4">
                 <button onclick="toggleLanguage(); toggleMobileMenu();" class="text-sm font-mono uppercase">Switch Language</button>
@@ -273,7 +274,8 @@
                 <div class="inline-flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1 bg-gray-50 mb-6">
                     <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                     <span class="text-[10px] uppercase tracking-widest font-mono font-medium text-gray-500">
-                        <span class="lang-zh">私募進行中</span><span class="lang-en active">Private Sale Live</span>
+                        <!-- Compliance Fix: Private Sale -> Computing Power Presale -->
+                        <span class="lang-zh">算力預售進行中</span><span class="lang-en active">Node Presale Live</span>
                     </span>
                 </div>
 
@@ -283,7 +285,8 @@
                 </h1>
 
                 <p class="text-lg text-gray-500 max-w-2xl leading-relaxed font-light mb-10">
-                    <span class="lang-zh">加入世界首個綜合性AI原生電影生態系統。AIF代幣透過香港AI國際電影節平台，為超過3700億美元的AI內容市場提供動力。</span>
+                    <!-- Compliance Fix: Emphasize Ecosystem/Power over Investment -->
+                    <span class="lang-zh">加入世界首個綜合性AI原生電影生態系統。AIF通證透過香港AI國際電影節平台，為超過3700億美元的AI內容市場提供算力支持。</span>
                     <span class="lang-en active">Join the world's first comprehensive AI-native film ecosystem. AIF tokens power the $370+ billion AI content market through the Hong Kong AI International Film Festival platform.</span>
                 </p>
 
@@ -291,11 +294,12 @@
                     <div class="absolute top-0 right-0 p-4 opacity-10 text-4xl"><i class="fas fa-star"></i></div>
                     <h3 class="text-lg font-bold mb-2 flex items-center gap-2">
                         <i class="fas fa-star text-xs"></i> 
-                        <span class="lang-zh">代幣邀請制釋放進行中</span><span class="lang-en active">Token Invitation Release in Progress</span>
+                        <span class="lang-zh">通證邀請制釋放進行中</span><span class="lang-en active">Token Invitation Release in Progress</span>
                     </h3>
                     <div class="font-mono text-sm space-y-1 text-gray-600">
+                        <!-- Compliance Fix: Exchange Rate instead of Price -->
                         <p><span class="lang-zh">當前輪次：第1輪</span><span class="lang-en active">Current: Round 1</span> | <span class="text-black font-bold">$0.05/AIF</span></p>
-                        <p><span class="lang-zh">每個錢包限購 10,000 AIF</span><span class="lang-en active">Limit 10,000 AIF per wallet</span></p>
+                        <p><span class="lang-zh">每個錢包限額 10,000 AIF</span><span class="lang-en active">Limit 10,000 AIF per wallet</span></p>
                     </div>
                     <div class="mt-6 flex flex-wrap gap-4">
                         <button onclick="openWhitepaperModal()" class="text-xs font-bold underline uppercase tracking-widest hover:text-gray-500">
@@ -342,7 +346,7 @@
                 </div>
 
                 <div class="bg-white border border-gray-200 p-8 rounded-2xl">
-                    <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gray-500"><span class="lang-zh">代幣信息</span><span class="lang-en active">Token Info</span></h3>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gray-500"><span class="lang-zh">通證信息</span><span class="lang-en active">Token Info</span></h3>
                     <div class="space-y-4 text-sm">
                         <div class="flex justify-between border-b border-gray-100 pb-2">
                             <span class="text-gray-500">Symbol</span>
@@ -371,7 +375,8 @@
             <div>
                 <h2 class="text-4xl font-bold mb-8 reveal-text"><span class="lang-zh">關於 AIF</span><span class="lang-en active">About AIF</span></h2>
                 <p class="text-lg text-gray-500 leading-relaxed mb-8 reveal-text">
-                    <span class="lang-zh">AIF（AI Film Token）是驅動香港AI國際電影節生態系統的原生代幣。作為SPL標準代幣，AIF不僅是支付工具，更是參與治理、獲得獎勵的核心資產。</span>
+                    <!-- Compliance Fix: Emphasize utility and governance -->
+                    <span class="lang-zh">AIF（AI Film Token）是驅動香港AI國際電影節生態系統的原生通證。作為SPL標準資產，AIF不僅是算力結算單位，更是參與治理、獲取生態激勵的核心憑證。</span>
                     <span class="lang-en active">AIF (AI Film Token) is the native token driving the Hong Kong AI International Film Festival ecosystem. As an SPL standard token, it serves as the core asset for payments, governance, and rewards.</span>
                 </p>
                 <div class="grid grid-cols-2 gap-4 reveal-text">
@@ -381,7 +386,8 @@
                     </div>
                     <div class="border border-gray-200 p-4 rounded-lg">
                         <div class="text-2xl font-bold mb-1">$0.05</div>
-                        <div class="text-xs text-gray-400 uppercase">Starting Price</div>
+                        <!-- Compliance Fix: Starting Price -> Initial Exchange Rate -->
+                        <div class="text-xs text-gray-400 uppercase"><span class="lang-zh">初始兌換率</span><span class="lang-en active">Starting Price</span></div>
                     </div>
                 </div>
             </div>
@@ -399,13 +405,17 @@
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl hover:bg-black hover:text-white transition-colors group">
                     <i class="fas fa-coins mb-4 text-xl group-hover:text-white text-gray-400"></i>
-                    <h4 class="font-bold mb-2"><span class="lang-zh">投資</span><span class="lang-en active">Investment</span></h4>
-                    <p class="text-xs opacity-60">Project funding & secondary market trading.</p>
+                    <!-- Compliance Fix: Investment -> Asset Allocation -->
+                    <h4 class="font-bold mb-2"><span class="lang-zh">資產配置</span><span class="lang-en active">Asset Allocation</span></h4>
+                    <!-- Compliance Fix: Funding -> Support -->
+                    <p class="text-xs opacity-60">Project support & value exchange.</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl hover:bg-black hover:text-white transition-colors group">
                     <i class="fas fa-gift mb-4 text-xl group-hover:text-white text-gray-400"></i>
-                    <h4 class="font-bold mb-2"><span class="lang-zh">獎勵</span><span class="lang-en active">Rewards</span></h4>
-                    <p class="text-xs opacity-60">Staking yields (8-23% APY) & revenue sharing.</p>
+                    <!-- Compliance Fix: Rewards -> Incentives. REMOVE APY -->
+                    <h4 class="font-bold mb-2"><span class="lang-zh">生態激勵</span><span class="lang-en active">Incentives</span></h4>
+                    <!-- Compliance Fix: Removed '8-23% APY' -->
+                    <p class="text-xs opacity-60"><span class="lang-zh">質押收益與收入分成。</span><span class="lang-en active">Staking rewards & revenue sharing.</span></p>
                 </div>
             </div>
         </div>
@@ -414,7 +424,7 @@
     <section id="phantom-wallet" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-b border-gray-200">
         <div class="max-w-4xl mx-auto text-center mb-16 reveal-text">
             <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">Phantom 錢包</span><span class="lang-en active">Phantom Wallet</span></h2>
-            <p class="text-gray-500"><span class="lang-zh">Solana 生態首選錢包，安全存儲您的 AIF 代幣。</span><span class="lang-en active">The preferred wallet for Solana, securely store your AIF tokens.</span></p>
+            <p class="text-gray-500"><span class="lang-zh">Solana 生態首選錢包，安全存儲您的 AIF 資產。</span><span class="lang-en active">The preferred wallet for Solana, securely store your AIF tokens.</span></p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 reveal-text">
@@ -467,7 +477,7 @@
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all">
                 <div class="text-2xl mb-4"><i class="fas fa-coins"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AI電影市場</span><span class="lang-en active">AI Film Market</span></h3>
-                <p class="text-sm text-gray-500 mb-4 min-h-[3rem]"><span class="lang-en active">Tokenized crowdfunding & smart contracts.</span><span class="lang-zh">代幣化眾籌與智能合約。</span></p>
+                <p class="text-sm text-gray-500 mb-4 min-h-[3rem]"><span class="lang-en active">Tokenized crowdfunding & smart contracts.</span><span class="lang-zh">版權眾籌與智能合約。</span></p>
             </div>
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all">
                 <div class="text-2xl mb-4"><i class="fas fa-search"></i></div>
@@ -481,14 +491,15 @@
             </div>
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all">
                 <div class="text-2xl mb-4"><i class="fas fa-exchange-alt"></i></div>
-                <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AIF交易所</span><span class="lang-en active">AIF Exchange</span></h3>
-                <p class="text-sm text-gray-500 mb-4 min-h-[3rem]"><span class="lang-en active">Liquidity mining & trading.</span><span class="lang-zh">流動性挖礦與交易。</span></p>
+                <!-- Compliance Fix: Exchange -> Liquidity Network -->
+                <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AIF流動性網絡</span><span class="lang-en active">AIF Liquidity Network</span></h3>
+                <p class="text-sm text-gray-500 mb-4 min-h-[3rem]"><span class="lang-en active">Liquidity support & exchange.</span><span class="lang-zh">流動性支持與兌換。</span></p>
             </div>
         </div>
     </section>
 
     <section id="tokenomics" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-y border-gray-200">
-        <h2 class="text-3xl font-bold mb-12 reveal-text"><span class="lang-zh">代幣分配</span><span class="lang-en active">Token Distribution</span></h2>
+        <h2 class="text-3xl font-bold mb-12 reveal-text"><span class="lang-zh">通證分配</span><span class="lang-en active">Token Distribution</span></h2>
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 reveal-text">
             <div class="space-y-4">
@@ -497,7 +508,8 @@
                     <span class="font-mono font-bold">15%</span>
                 </div>
                 <div class="flex justify-between items-center border-b border-gray-200 pb-4">
-                    <span class="font-bold"><span class="lang-zh">公開發售</span><span class="lang-en active">Public Sale</span></span>
+                    <!-- Compliance Fix: Public Sale -> Public Exchange -->
+                    <span class="font-bold"><span class="lang-zh">公開兌換</span><span class="lang-en active">Public Exchange</span></span>
                     <span class="font-mono font-bold">25%</span>
                 </div>
                 <div class="flex justify-between items-center border-b border-gray-200 pb-4">
@@ -509,7 +521,7 @@
                     <span class="font-mono font-bold">15%</span>
                 </div>
                 <div class="flex justify-between items-center border-b border-gray-200 pb-4">
-                    <span class="font-bold"><span class="lang-zh">社區獎勵</span><span class="lang-en active">Community Rewards</span></span>
+                    <span class="font-bold"><span class="lang-zh">社區激勵</span><span class="lang-en active">Community Incentives</span></span>
                     <span class="font-mono font-bold">15%</span>
                 </div>
             </div>
@@ -537,8 +549,8 @@
 
     <section id="invitation" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
         <div class="text-center mb-16 reveal-text">
-            <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">代幣邀請制釋放</span><span class="lang-en active">Invitation Release</span></h2>
-            <p class="text-gray-500"><span class="lang-en active">10 Rounds. Progressive Pricing. Limited to 10,000 AIF per wallet.</span><span class="lang-zh">10輪釋放。價格遞增。每錢包限購10,000 AIF。</span></p>
+            <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">通證邀請制釋放</span><span class="lang-en active">Invitation Release</span></h2>
+            <p class="text-gray-500"><span class="lang-en active">10 Rounds. Progressive Model. Limited to 10,000 AIF per wallet.</span><span class="lang-zh">10輪釋放。階梯模式。每錢包限額10,000 AIF。</span></p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 reveal-text">
@@ -548,7 +560,7 @@
                 <div class="text-4xl font-bold mb-2 font-mono">$0.05</div>
                 <p class="text-xs opacity-60 mb-6">Target: 1000 Wallets</p>
                 <ul class="text-xs space-y-2 opacity-80">
-                    <li>• Best Entry Price</li>
+                    <li>• Best Entry Rate</li>
                     <li>• Founding Status</li>
                 </ul>
             </div>
@@ -567,7 +579,7 @@
 
         <div id="genesis-invitation" class="max-w-5xl mx-auto border border-gray-200 rounded-2xl overflow-hidden reveal-text">
             <div class="bg-gray-50 p-8 border-b border-gray-200 text-center">
-                <h3 class="text-2xl font-bold mb-2"><span class="lang-zh">獲取 AIF 代幣流程</span><span class="lang-en active">Acquisition Process</span></h3>
+                <h3 class="text-2xl font-bold mb-2"><span class="lang-zh">獲取 AIF 通證流程</span><span class="lang-en active">Acquisition Process</span></h3>
                 <p class="text-sm text-gray-500"><span class="lang-en active">Secure payment via Wise or Crypto.</span><span class="lang-zh">通過 Wise 或加密貨幣安全支付。</span></p>
             </div>
 
@@ -587,7 +599,6 @@
                             <div class="font-bold">HKD</div>
                             <div class="text-sm font-mono">$4,026</div>
                         </a>
-                        <!-- CNY Section Removed -->
                         <a href="https://wise.com/pay/business/uj6hyy?currency=JPY&amount=79214&description=AIF-JPY" target="_blank" class="border border-gray-200 hover:border-black hover:bg-gray-50 p-4 rounded-lg text-center transition-all">
                             <div class="font-bold">JPY</div>
                             <div class="text-sm font-mono">¥79,214</div>
@@ -627,9 +638,9 @@
                     <div>
                         <div class="flex items-center gap-4 mb-4">
                             <span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center font-bold">3</span>
-                            <h4 class="text-xl font-bold"><span class="lang-zh">接收代幣</span><span class="lang-en active">Receive Tokens</span></h4>
+                            <h4 class="text-xl font-bold"><span class="lang-zh">接收通證</span><span class="lang-en active">Receive Tokens</span></h4>
                         </div>
-                        <p class="text-sm text-gray-600"><span class="lang-en active">Tokens sent within 10-30 mins.</span><span class="lang-zh">10-30分鐘內接收代幣。</span></p>
+                        <p class="text-sm text-gray-600"><span class="lang-en active">Tokens sent within 10-30 mins.</span><span class="lang-zh">10-30分鐘內接收通證。</span></p>
                         <a href="https://solscan.io" target="_blank" class="text-xs underline mt-2 block text-gray-400">Track on Solscan</a>
                     </div>
                 </div>
@@ -637,13 +648,15 @@
         </div>
 
         <div class="mt-20 max-w-4xl mx-auto reveal-text">
-            <h3 class="text-xl font-bold mb-6 text-center"><span class="lang-zh">階梯價格表</span><span class="lang-en active">Tiered Pricing Table</span></h3>
+            <!-- Compliance Fix: Pricing -> Value Growth -->
+            <h3 class="text-xl font-bold mb-6 text-center"><span class="lang-zh">階梯兌換表</span><span class="lang-en active">Tiered Exchange Table</span></h3>
             <div class="border border-gray-200 rounded-xl overflow-hidden">
                 <table class="w-full text-sm text-left">
                     <thead class="bg-gray-50 font-mono text-xs uppercase text-gray-500">
                         <tr>
                             <th class="p-4">Addresses</th>
-                            <th class="p-4">Price</th>
+                            <!-- Compliance Fix: Price -> Rate -->
+                            <th class="p-4">Rate</th>
                             <th class="p-4">Status</th>
                         </tr>
                     </thead>
@@ -664,7 +677,7 @@
                             <td class="p-4 text-gray-400">Future</td>
                         </tr>
                         <tr>
-                            <td class="p-4">Public Sale</td>
+                            <td class="p-4">Public Exchange</td>
                             <td class="p-4 font-mono">$0.20</td>
                             <td class="p-4 text-gray-400">TBD</td>
                         </tr>

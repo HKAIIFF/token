@@ -111,11 +111,9 @@
 </head>
 <body class="bg-white text-black selection:bg-black selection:text-white overflow-hidden" id="mainBody">
 
-    <!-- Compliance Modal -->
     <div id="complianceModal" class="fixed inset-0 z-[100] compliance-overlay flex items-center justify-center p-4">
         <div class="bg-white border border-black shadow-2xl rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto flex flex-col relative">
             
-            <!-- Language Toggle in Modal -->
             <div class="absolute top-6 right-6 z-10">
                 <button onclick="toggleLanguage()" class="text-xs font-mono border border-gray-200 px-3 py-1.5 rounded-full hover:bg-black hover:text-white transition-all uppercase flex items-center gap-2">
                     <i class="fas fa-globe"></i>
@@ -141,7 +139,7 @@
                         <span class="lang-en active">You are about to enter the HKAIIFF Digital Asset Service Area.</span>
                     </p>
                     <p class="font-medium text-black">
-                        <span class="lang-zh">本服務由香港主體提供，受香港法律管轄。</span>
+                        <span class="lang-zh">本服務由香港主體提供，受香港法律管辖。</span>
                         <span class="lang-en active">This service is provided by a Hong Kong entity and is subject to Hong Kong laws.</span>
                     </p>
                 </div>
@@ -208,7 +206,6 @@
         </div>
     </div>
 
-    <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all duration-300">
         <div class="px-6 md:px-8 py-4 flex justify-between items-center max-w-[1920px] mx-auto">
             <a href="#home" class="flex items-center gap-3 group">
@@ -221,7 +218,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
             <div class="hidden xl:flex items-center gap-1 text-[13px] font-medium tracking-wide">
                 <a href="#ecosystem" class="px-3 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">生態系統</span><span class="lang-en active">Ecosystem</span></a>
                 <a href="#about-aif" class="px-3 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-zh">關於AIF</span><span class="lang-en active">About AIF</span></a>
@@ -251,7 +247,6 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div id="mobileMenu" class="fixed inset-0 z-[60] mobile-menu-overlay hidden flex-col p-6 overflow-y-auto">
         <div class="flex justify-between items-center mb-8">
             <span class="font-bold text-lg">Menu</span>
@@ -282,11 +277,9 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
     <section id="home" class="pt-32 pb-20 px-6 md:px-8 max-w-[1920px] mx-auto border-b border-gray-200">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div class="lg:col-span-7 animate-fade-in">
-                <!-- Status Badge -->
                 <div class="inline-flex items-center gap-2 border border-gray-200 rounded-full px-4 py-2 bg-gray-50 mb-8">
                     <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                     <span class="text-[11px] uppercase tracking-widest font-mono font-medium text-gray-500">
@@ -304,7 +297,6 @@
                     <span class="lang-en active">Join the world's first comprehensive AI-native film ecosystem. AIF tokens power the $370+ billion AI content market through the Hong Kong AI International Film Festival platform.</span>
                 </p>
 
-                <!-- Private Sale Alert Box (Styled white) -->
                 <div class="border border-black p-6 rounded-xl mb-10 relative overflow-hidden group hover:bg-gray-50 transition-colors">
                     <div class="absolute top-0 right-0 p-4 opacity-10 text-4xl"><i class="fas fa-star"></i></div>
                     <h3 class="text-lg font-bold mb-3 flex items-center gap-2">
@@ -332,7 +324,6 @@
                     </div>
                 </div>
 
-                <!-- Stats Grid -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-100 pt-8">
                     <div>
                         <div class="text-3xl font-bold mb-1">6</div>
@@ -353,9 +344,7 @@
                 </div>
             </div>
 
-            <!-- Right Column Cards -->
             <div class="lg:col-span-5 flex flex-col gap-6 justify-end animate-slide-up">
-                <!-- Current Round Card -->
                 <div class="bg-gray-50 border border-gray-200 p-8 rounded-2xl">
                     <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gray-500 flex justify-between items-center">
                         <span class="lang-zh">當前輪次</span><span class="lang-en active">Current Round</span>
@@ -378,7 +367,6 @@
                     </div>
                 </div>
 
-                <!-- Token Info Card -->
                 <div class="bg-white border border-gray-200 p-8 rounded-2xl">
                     <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gray-500"><span class="lang-zh">通證信息</span><span class="lang-en active">Token Info</span></h3>
                     <div class="space-y-4 text-sm">
@@ -404,7 +392,6 @@
         </div>
     </section>
 
-    <!-- About AIF Section -->
     <section id="about-aif" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto border-b border-gray-200">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
@@ -454,7 +441,6 @@
         </div>
     </section>
 
-    <!-- Phantom Wallet Section -->
     <section id="phantom-wallet" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-b border-gray-200">
         <div class="max-w-4xl mx-auto text-center mb-16 reveal-text">
             <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">Phantom 錢包</span><span class="lang-en active">Phantom Wallet</span></h2>
@@ -494,7 +480,6 @@
         </div>
     </section>
 
-    <!-- Ecosystem Section -->
     <section id="ecosystem" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
         <div class="mb-12 text-center reveal-text">
             <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">HKAIIFF 生態系統</span><span class="lang-en active">HKAIIFF Ecosystem</span></h2>
@@ -502,7 +487,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal-text">
-            <!-- Card 1 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-trophy"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">展映競賽平台</span><span class="lang-en active">Festival Competition</span></h3>
@@ -516,7 +500,6 @@
                 </ul>
             </div>
             
-            <!-- Card 2 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-graduation-cap"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AI電影學院</span><span class="lang-en active">AI Film Academy</span></h3>
@@ -530,7 +513,6 @@
                 </ul>
             </div>
 
-            <!-- Card 3 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-coins"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AI電影市場</span><span class="lang-en active">AI Film Market</span></h3>
@@ -544,7 +526,6 @@
                 </ul>
             </div>
 
-            <!-- Card 4 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-search"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">徵片中心</span><span class="lang-en active">Casting Center</span></h3>
@@ -558,7 +539,6 @@
                 </ul>
             </div>
 
-            <!-- Card 5 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-globe"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">404.world</span><span class="lang-en active">404.world</span></h3>
@@ -572,7 +552,6 @@
                 </ul>
             </div>
 
-            <!-- Card 6 -->
             <div class="border border-gray-200 p-8 rounded-xl hover:shadow-lg transition-all hover:border-black group">
                 <div class="text-2xl mb-4 text-gray-400 group-hover:text-black transition-colors"><i class="fas fa-exchange-alt"></i></div>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">AIF 價值網絡</span><span class="lang-en active">AIF Exchange</span></h3>
@@ -588,7 +567,6 @@
         </div>
     </section>
 
-    <!-- Tokenomics Section -->
     <section id="tokenomics" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-y border-gray-200">
         <h2 class="text-3xl font-bold mb-12 reveal-text"><span class="lang-zh">通證經濟學</span><span class="lang-en active">Tokenomics</span></h2>
         
@@ -670,7 +648,6 @@
         </div>
     </section>
 
-    <!-- Invitation Release (Price Evolution) -->
     <section id="invitation" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
         <div class="text-center mb-16 reveal-text">
             <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">通證邀請制釋放</span><span class="lang-en active">Invitation Release</span></h2>
@@ -681,7 +658,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 reveal-text">
-            <!-- Round 1 (Completed) -->
             <div class="border border-gray-200 bg-gray-50 p-8 rounded-xl relative overflow-hidden opacity-70">
                 <span class="absolute top-4 right-4 text-xs font-bold text-gray-400 uppercase border border-gray-300 px-2 py-1 rounded">
                     <span class="lang-zh">已完成</span><span class="lang-en active">Completed</span>
@@ -695,7 +671,6 @@
                 <div class="text-[10px] text-gray-400 uppercase font-bold text-center">100%</div>
             </div>
 
-            <!-- Round 2 (Current) -->
             <div class="border border-black bg-white text-black p-8 rounded-xl relative overflow-hidden shadow-xl transform scale-105 z-10">
                 <span class="absolute top-4 right-4 text-xs font-bold bg-black text-white px-3 py-1 rounded uppercase animate-pulse">
                     <span class="lang-zh">進行中</span><span class="lang-en active">In Progress</span>
@@ -716,7 +691,6 @@
                 </p>
             </div>
 
-            <!-- Future Rounds -->
             <div class="border border-gray-200 bg-white p-8 rounded-xl opacity-60">
                 <span class="absolute top-4 right-4 text-xs font-bold text-gray-400 uppercase">
                     <span class="lang-zh">未來</span><span class="lang-en active">Future</span>
@@ -731,7 +705,6 @@
             </div>
         </div>
 
-        <!-- Genesis Invitation & Payment -->
         <div id="genesis-invitation" class="max-w-5xl mx-auto border border-gray-200 rounded-2xl overflow-hidden reveal-text">
             <div class="bg-gray-50 p-8 border-b border-gray-200 text-center">
                 <h3 class="text-2xl font-bold mb-2"><span class="lang-zh">創世邀請計劃 & 兌換</span><span class="lang-en active">Genesis Invitation & Payment</span></h3>
@@ -742,7 +715,6 @@
             </div>
 
             <div class="p-8 md:p-12">
-                <!-- Step 1: Payment -->
                 <div class="mb-12">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center font-bold">1</span>
@@ -754,7 +726,6 @@
                         <span class="lang-en active">Accept MASTERCARD, VISA and APPLE PAY.</span>
                     </p>
 
-                    <!-- Wise Payment Buttons (RMB Removed) -->
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 ml-0 md:ml-12">
                         <a href="https://wise.com/pay/r/YgePWEvx0Jo_i8I" target="_blank" class="border border-gray-200 hover:border-black hover:bg-black hover:text-white p-4 rounded-xl text-center transition-all group">
                             <div class="font-bold mb-1 group-hover:text-white"><i class="fas fa-dollar-sign mr-1"></i> USD</div>
@@ -762,15 +733,14 @@
                         </a>
                         <a href="https://wise.com/pay/r/h2x5zzOt3vjGJN8" target="_blank" class="border border-gray-200 hover:border-black hover:bg-black hover:text-white p-4 rounded-xl text-center transition-all group">
                             <div class="font-bold mb-1 group-hover:text-white"><i class="fas fa-dollar-sign mr-1"></i> HKD</div>
-                            <div class="text-sm font-mono text-gray-500 group-hover:text-gray-300">HK$4,026</div>
+                            <div class="text-sm font-mono text-gray-500 group-hover:text-gray-300">HK$4,427</div>
                         </a>
                         <a href="https://wise.com/pay/r/pZn6jJybopfVFr8" target="_blank" class="border border-gray-200 hover:border-black hover:bg-black hover:text-white p-4 rounded-xl text-center transition-all group">
                             <div class="font-bold mb-1 group-hover:text-white"><i class="fas fa-yen-sign mr-1"></i> JPY</div>
-                            <div class="text-sm font-mono text-gray-500 group-hover:text-gray-300">¥79,214</div>
+                            <div class="text-sm font-mono text-gray-500 group-hover:text-gray-300">¥88,234</div>
                         </a>
                     </div>
 
-                    <!-- Crypto Payment -->
                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 ml-0 md:ml-12">
                         <h5 class="font-bold mb-4 flex items-center gap-2 text-sm uppercase tracking-wide">
                             <i class="fas fa-wallet"></i> <span class="lang-zh">加密貨幣支付 (USDT/USDC)</span><span class="lang-en active">Crypto Payment (USDT/USDC)</span>
@@ -799,7 +769,6 @@
                     </div>
                 </div>
 
-                <!-- Steps 2 & 3 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-100 pt-8">
                     <div>
                         <div class="flex items-center gap-4 mb-4">
@@ -833,7 +802,6 @@
             </div>
         </div>
 
-        <!-- Tiered Pricing Table -->
         <div class="mt-20 max-w-4xl mx-auto reveal-text">
             <h3 class="text-xl font-bold mb-6 text-center"><span class="lang-zh">階梯價值對照表</span><span class="lang-en active">Tiered Pricing Table</span></h3>
             <div class="border border-gray-200 rounded-xl overflow-hidden">
@@ -889,12 +857,10 @@
         </div>
     </section>
 
-    <!-- Roadmap Section -->
     <section id="roadmap" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto border-t border-gray-200 bg-gray-50">
         <h2 class="text-3xl font-bold mb-16 text-center reveal-text"><span class="lang-zh">發展路線圖</span><span class="lang-en active">Development Roadmap</span></h2>
         
         <div class="max-w-4xl mx-auto space-y-12 border-l border-gray-300 pl-8 ml-4 md:ml-auto md:mr-auto reveal-text">
-            <!-- Item 1 -->
             <div class="relative">
                 <span class="absolute -left-[39px] top-1 w-5 h-5 bg-black rounded-full border-4 border-white"></span>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">2025年第2-4季度</span><span class="lang-en active">2025 Q2-Q4</span></h3>
@@ -917,7 +883,6 @@
                 </div>
             </div>
 
-            <!-- Item 2 -->
             <div class="relative opacity-80">
                 <span class="absolute -left-[39px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white"></span>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">2026年</span><span class="lang-en active">2026</span></h3>
@@ -935,7 +900,6 @@
                 </div>
             </div>
 
-            <!-- Item 3 -->
             <div class="relative opacity-60">
                 <span class="absolute -left-[39px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white"></span>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">2027-2028年</span><span class="lang-en active">2027-2028</span></h3>
@@ -948,7 +912,6 @@
                 </ul>
             </div>
             
-            <!-- Item 4 -->
             <div class="relative opacity-40">
                 <span class="absolute -left-[39px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white"></span>
                 <h3 class="text-xl font-bold mb-2"><span class="lang-zh">2029-2030年</span><span class="lang-en active">2029-2030</span></h3>
@@ -963,7 +926,6 @@
         </div>
     </section>
 
-    <!-- Market Opportunity Cards Section -->
     <section class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto border-t border-gray-200">
         <div class="text-center mb-12 reveal-text">
             <h2 class="text-3xl font-bold mb-4"><span class="lang-zh">巨大市場機會</span><span class="lang-en active">Market Opportunity</span></h2>
@@ -990,7 +952,6 @@
         </div>
     </section>
 
-    <!-- Subscribe -->
     <section class="py-24 px-6 text-center bg-gray-50 border-t border-gray-200">
         <div class="max-w-xl mx-auto reveal-text">
             <h2 class="text-3xl font-bold mb-6"><span class="lang-zh">加入革命</span><span class="lang-en active">Join the Revolution</span></h2>
@@ -1002,7 +963,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-black text-white pt-24 pb-8 px-6 md:px-8">
         <div class="max-w-[1920px] mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/20 pb-12">
@@ -1048,7 +1008,6 @@
         </div>
     </footer>
 
-    <!-- Whitepaper Modal -->
     <div id="whitepaper-modal" class="fixed inset-0 bg-black/80 z-[100] hidden flex items-center justify-center p-4 backdrop-blur-sm">
         <div class="bg-white rounded-2xl max-w-md w-full p-8 relative animate-fade-in">
             <button onclick="closeWhitepaperModal()" class="absolute top-4 right-4 text-xl text-gray-400 hover:text-black transition-colors"><i class="fas fa-times"></i></button>

@@ -216,25 +216,25 @@
             <div class="font-mono text-sm md:text-base text-gray-800 mb-6 space-y-2">
                 <p>
                     <span class="lang-en active">You are about to enter the HKAIIFF Digital Asset Service Area.</span>
-                    <span class="lang-zh">您即将进入HKAIIFF数字资产服务区域。</span>
+                    <span class="lang-zh">您即将進入HKAIIFF數字資產服務區域。</span>
                 </p>
                 <p>
                     <span class="lang-en active">This service is provided by a Hong Kong entity and is governed by Hong Kong law.</span>
-                    <span class="lang-zh">本服务由香港主体提供,受香港法律管辖。</span>
+                    <span class="lang-zh">本服務由香港主體提供,受香港法律管轄。</span>
                 </p>
             </div>
 
             <div class="space-y-4 mb-8 font-mono text-sm font-bold text-black">
                 <p class="mb-4 text-gray-600">
                     <span class="lang-en active">Please confirm:</span>
-                    <span class="lang-zh">请确认:</span>
+                    <span class="lang-zh">請確認:</span>
                 </p>
 
                 <label class="flex items-start gap-3 cursor-pointer hover:text-signal transition-colors">
                     <input type="checkbox" class="custom-checkbox mt-1 disclaimer-check" onchange="checkDisclaimer()">
                     <span>
                         <span class="lang-en active">I am not a resident of Mainland China</span>
-                        <span class="lang-zh">本人非中国大陆居民</span>
+                        <span class="lang-zh">本人非中國大陸居民</span>
                     </span>
                 </label>
 
@@ -242,7 +242,7 @@
                     <input type="checkbox" class="custom-checkbox mt-1 disclaimer-check" onchange="checkDisclaimer()">
                     <span>
                         <span class="lang-en active">I am not a U.S. citizen or resident</span>
-                        <span class="lang-zh">本人非美国公民或居民</span>
+                        <span class="lang-zh">本人非美國公民或居民</span>
                     </span>
                 </label>
 
@@ -250,7 +250,7 @@
                     <input type="checkbox" class="custom-checkbox mt-1 disclaimer-check" onchange="checkDisclaimer()">
                     <span>
                         <span class="lang-en active">I am participating with my own offshore assets</span>
-                        <span class="lang-zh">本人通过自有境外资产参与</span>
+                        <span class="lang-zh">本人通過自有境外資產參與</span>
                     </span>
                 </label>
 
@@ -258,7 +258,7 @@
                     <input type="checkbox" class="custom-checkbox mt-1 disclaimer-check" onchange="checkDisclaimer()">
                     <span>
                         <span class="lang-en active">I acknowledge the risks of digital asset participation</span>
-                        <span class="lang-zh">本人知悉数字资产参与风险</span>
+                        <span class="lang-zh">本人知悉數字資產參與風險</span>
                     </span>
                 </label>
 
@@ -266,7 +266,7 @@
                     <input type="checkbox" class="custom-checkbox mt-1 disclaimer-check" onchange="checkDisclaimer()">
                     <span>
                         <span class="lang-en active">I voluntarily assume all risks</span>
-                        <span class="lang-zh">本人自愿承担全部风险</span>
+                        <span class="lang-zh">本人自願承擔全部風險</span>
                     </span>
                 </label>
             </div>
@@ -274,11 +274,11 @@
             <div class="border-t-2 border-black pt-6">
                 <p class="font-mono text-xs text-gray-500 mb-4">
                     <span class="lang-en active">I have read and agree to the "User Agreement" and "Risk Disclosure Statement".</span>
-                    <span class="lang-zh">我已阅读并同意《用户协议》《风险提示书》</span>
+                    <span class="lang-zh">我已閱讀並同意《用戶協議》《風險提示書》</span>
                 </p>
                 <button id="disclaimer-submit" disabled onclick="acceptDisclaimer()" class="w-full bg-gray-300 text-gray-500 border-2 border-gray-300 py-3 font-heavy text-xl uppercase tracking-widest transition-all duration-300 cursor-not-allowed">
                     <span class="lang-en active">ENTER SITE</span>
-                    <span class="lang-zh">提交并进入</span>
+                    <span class="lang-zh">提交並進入</span>
                 </button>
             </div>
         </div>
@@ -314,7 +314,8 @@
             </div>
 
             <div class="flex h-full">
-                <a href="https://wise.com/pay/r/2Cd46UMrecZcXdQ" target="_blank" class="hidden md:flex items-center px-8 bg-signal text-black border-l-2 border-black hover:bg-black hover:text-white transition-colors font-mono text-xs font-bold uppercase h-full">
+                <!-- CHANGED: Wise link -> Stripe link -->
+                <a href="https://buy.stripe.com/14AeVd9Is9Rx9mr7130x202" target="_blank" class="hidden md:flex items-center px-8 bg-signal text-black border-l-2 border-black hover:bg-black hover:text-white transition-colors font-mono text-xs font-bold uppercase h-full">
                     <span class="lang-en active">GET AIF</span><span class="lang-zh">獲取 AIF</span>
                 </a>
                 <button id="lang-btn" onclick="toggleLanguage()" class="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-colors font-mono text-xs font-bold uppercase h-full">
@@ -339,7 +340,8 @@
             
             <div class="h-px bg-gray-800 my-4"></div>
             
-            <a href="https://wise.com/pay/r/2Cd46UMrecZcXdQ" target="_blank" class="brutal-btn w-full text-center">
+            <!-- CHANGED: Wise link -> Stripe link -->
+            <a href="https://buy.stripe.com/14AeVd9Is9Rx9mr7130x202" target="_blank" class="brutal-btn w-full text-center">
                 <span class="lang-en active">GET AIF NOW</span><span class="lang-zh">立即獲取 AIF</span>
             </a>
         </div>
@@ -392,17 +394,19 @@
                             <h3 class="font-heavy text-2xl uppercase">
                                 <span class="lang-en active">Current Round</span><span class="lang-zh">當前輪次</span>
                             </h3>
-                            <div class="text-signal font-heavy text-4xl">0.06 USDT</div>
+                            <!-- CHANGED: 0.06 USDT -> 0.06 USD -->
+                            <div class="text-signal font-heavy text-4xl">0.06 USD</div>
                         </div>
                         <div class="font-mono text-xs text-gray-400 mb-2">
                             <span class="lang-en active">Target: 3000 Wallets</span><span class="lang-zh">目標：3000個錢包</span>
                         </div>
                         <div class="brutal-progress mb-4">
-                            <!-- 2018 / 3000 = ~67% -->
+                            <!-- 2019 / 3000 = ~67% -->
                             <div class="brutal-progress-bar" style="width: 67%"></div>
                         </div>
                         <div class="flex justify-between text-xs font-mono">
-                            <span>2018 <span class="lang-en active">Joined</span><span class="lang-zh">已參與</span></span>
+                            <!-- CHANGED: 2018 -> 2019 -->
+                            <span>2019 <span class="lang-en active">Joined</span><span class="lang-zh">已參與</span></span>
                             <span class="text-signal">67%</span>
                         </div>
                         <div class="mt-4 pt-4 border-t border-gray-800 font-mono text-xs text-yellow-500">
@@ -734,28 +738,33 @@
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
             <div class="border border-gray-800 p-6 opacity-40 hover:border-white transition-colors">
                 <div class="text-sm font-mono text-gray-400 mb-1">ROUND 1</div>
-                <div class="text-3xl font-heavy text-white mb-2">0.05 USDT</div>
+                <!-- CHANGED: 0.05 USDT -> 0.05 USD -->
+                <div class="text-3xl font-heavy text-white mb-2">0.05 USD</div>
                 <div class="text-xs text-gray-500 font-mono"><span class="lang-en active">Target: 1000</span><span class="lang-zh">目標: 1000</span></div>
             </div>
             <div class="border border-gray-800 p-6 opacity-40 hover:border-white transition-colors">
                 <div class="text-sm font-mono text-gray-400 mb-1">ROUND 2</div>
-                <div class="text-3xl font-heavy text-white mb-2">0.055 USDT</div>
+                <!-- CHANGED: 0.055 USDT -> 0.055 USD -->
+                <div class="text-3xl font-heavy text-white mb-2">0.055 USD</div>
                 <div class="text-xs text-gray-500 font-mono"><span class="lang-en active">Target: 2000</span><span class="lang-zh">目標: 2000</span></div>
             </div>
             <div class="border-2 border-signal bg-gray-900 p-6 relative overflow-hidden">
                 <div class="absolute top-0 right-0 bg-signal text-black text-xs font-bold px-2 py-1">CURRENT</div>
                 <div class="text-sm font-mono text-gray-400 mb-1">ROUND 3</div>
-                <div class="text-3xl font-heavy text-white mb-2">0.06 USDT</div>
+                <!-- CHANGED: 0.06 USDT -> 0.06 USD -->
+                <div class="text-3xl font-heavy text-white mb-2">0.06 USD</div>
                 <div class="text-xs text-gray-500 font-mono"><span class="lang-en active">Target: 3000</span><span class="lang-zh">目標: 3000</span></div>
             </div>
             <div class="border border-gray-800 p-6 opacity-40 hover:border-white transition-colors">
                 <div class="text-sm font-mono text-gray-400 mb-1">ROUND 4-5</div>
-                <div class="text-3xl font-heavy text-white mb-2">0.07 USDT</div>
+                <!-- CHANGED: 0.07 USDT -> 0.07 USD -->
+                <div class="text-3xl font-heavy text-white mb-2">0.07 USD</div>
                 <div class="text-xs text-gray-500 font-mono"><span class="lang-en active">Target: 5000</span><span class="lang-zh">目標: 5000</span></div>
             </div>
             <div class="border border-gray-800 p-6 opacity-20 hover:border-white transition-colors">
                 <div class="text-sm font-mono text-gray-400 mb-1">ROUND 6-10</div>
-                <div class="text-3xl font-heavy text-white mb-2">0.10 USDT</div>
+                <!-- CHANGED: 0.10 USDT -> 0.10 USD -->
+                <div class="text-3xl font-heavy text-white mb-2">0.10 USD</div>
                 <div class="text-xs text-gray-500 font-mono"><span class="lang-en active">Target: 10000</span><span class="lang-zh">目標: 10000</span></div>
             </div>
         </div>
@@ -774,12 +783,14 @@
                 <div>
                     <i class="fas fa-lock text-4xl text-signal mb-4"></i>
                     <h4 class="font-bold mb-2"><span class="lang-en active">PRIVILEGE</span><span class="lang-zh">定向權益</span></h4>
-                    <p class="text-sm text-gray-400 font-mono"><span class="lang-en active">0.06 USDT/AIF Internal Rights</span><span class="lang-zh">0.06 USDT/AIF 內部定向權益</span></p>
+                    <!-- CHANGED: 0.06 USDT/AIF -> 0.06 USD/AIF -->
+                    <p class="text-sm text-gray-400 font-mono"><span class="lang-en active">0.06 USD/AIF Internal Rights</span><span class="lang-zh">0.06 USD/AIF 內部定向權益</span></p>
                 </div>
                 <div>
                     <i class="fas fa-rocket text-4xl text-gray-500 mb-4"></i>
                     <h4 class="font-bold mb-2"><span class="lang-en active">PUBLIC TARGET</span><span class="lang-zh">公開分配目標</span></h4>
-                    <p class="text-sm text-gray-400 font-mono"><span class="lang-en active">Public Allocation Value: 0.20 USDT/AIF</span><span class="lang-zh">公開分配價值：0.20 USDT/AIF</span></p>
+                    <!-- CHANGED: 0.20 USDT/AIF -> 0.20 USD/AIF -->
+                    <p class="text-sm text-gray-400 font-mono"><span class="lang-en active">Public Allocation Value: 0.20 USD/AIF</span><span class="lang-zh">公開分配價值：0.20 USD/AIF</span></p>
                 </div>
             </div>
         </div>
@@ -818,36 +829,37 @@
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <!-- CHANGED: ALL PAYMENT LINKS MODIFIED -->
                             <!-- USD -->
-                            <a href="https://wise.com/pay/r/2Cd46UMrecZcXdQ" target="_blank" class="brutal-btn w-full bg-white text-black text-sm">
+                            <a href="https://buy.stripe.com/14AeVd9Is9Rx9mr7130x202" target="_blank" class="brutal-btn w-full bg-white text-black text-sm">
                                 <i class="fas fa-dollar-sign mr-2"></i> USD ($622)
                             </a>
                             <!-- HKD -->
-                            <a href="https://wise.com/pay/r/50Ezgo0kXcMwckI" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                            <a href="https://buy.stripe.com/7sYeVd5sc9RxaqvgBD0x200" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-dollar-sign mr-2"></i> HKD ($4,840)
                             </a>
                             <!-- JPY -->
-                            <a href="https://wise.com/pay/r/vYRES8taWtWJny4" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                            <a href="https://buy.stripe.com/8x24gz1bW7Jp6af2KN0x203" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-yen-sign mr-2"></i> JPY (¥96,800)
                             </a>
                             <!-- AED -->
-                            <a href="https://wise.com/pay/r/0KzIDoow1Pufm8o" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                            <a href="https://buy.stripe.com/dRmdR9f2MfbR0PVdpr0x207" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-money-bill-wave mr-2"></i> AED (2,285)
                             </a>
                             <!-- SGD -->
-                            <a href="https://wise.com/pay/r/pq7WXVB4RAQoQq4" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                            <a href="https://buy.stripe.com/9B600jcUE0gX2Y3adf0x204" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-dollar-sign mr-2"></i> SGD (804)
                             </a>
                              <!-- EUR -->
-                             <a href="https://wise.com/pay/r/2wp3XarRjI1CSIA" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                             <a href="https://buy.stripe.com/00w5kDcUE5BheGL5WZ0x206" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-euro-sign mr-2"></i> EUR (532)
                             </a>
                              <!-- THB -->
-                             <a href="https://wise.com/pay/r/ddruO9FgC1HawTw" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                             <a href="https://buy.stripe.com/aFa8wPg6Q2p5eGL8570x208" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-baht-sign mr-2"></i> THB (19,602)
                             </a>
                              <!-- GBP -->
-                             <a href="https://wise.com/pay/r/louWsG-u4etiE7k" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
+                             <a href="https://buy.stripe.com/3cI7sL6wg5Bh2Y3bhj0x205" target="_blank" class="brutal-btn w-full bg-transparent border-white text-white text-sm">
                                 <i class="fas fa-pound-sign mr-2"></i> GBP (467)
                             </a>
                         </div>
